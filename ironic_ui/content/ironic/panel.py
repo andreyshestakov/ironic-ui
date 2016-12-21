@@ -24,7 +24,7 @@ from openstack_dashboard.dashboards.admin import dashboard
 class Ironic(horizon.Panel):
     name = _("Ironic Bare Metal Provisioning")
     slug = 'ironic'
-    permissions = ('openstack.roles.admin',)
+    permissions = ('openstack.roles.baremetal_admin',)
 
     def allowed(self, context):
         request = context['request']
